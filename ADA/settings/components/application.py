@@ -7,6 +7,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Package
     'rest_framework',
+    'rest_framework_swagger',
     # # Apps
     'tracking',
 ]

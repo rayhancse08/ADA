@@ -16,8 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from tracking import urls as tracking_urls
+from django.conf.urls import url
+from rest_framework_swagger.views import get_swagger_view
 
+schema_view = get_swagger_view(title='PlayHub API')
+
+# urlpatterns = [
+#     url(r'^$', schema_view)
+# ]
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('swagger/',schema_view),
     path('', include(tracking_urls))
 ]
