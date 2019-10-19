@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from tracking.models import Tracking
+from tracking.models import PlayHub
 
 
 class TrackingSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Tracking
+        model = PlayHub
         fields = '__all__'
