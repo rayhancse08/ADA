@@ -27,7 +27,7 @@ class PlayHubAdmin(admin.ModelAdmin):
 
         return response
 
-    export_as_csv.short_description = "Export Selected"
+    export_as_csv.short_description = "Generate Report"
 
     search_fields = (
         'user_info',
