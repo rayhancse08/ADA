@@ -10,6 +10,7 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
     # # Apps
     'tracking',
+    'extended_filters',
 ]
 
 MIDDLEWARE = [
